@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stingsCounter</title>
+    <link rel="shortcut icon" href="icons/find.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>count your strings...</h1>
+    <form action="#">
+        <textarea name="text" id="text" autofocus></textarea>
+        <input type="button" value="count" id="btn">
+    </form>
+    <div class="total-length"></div>
+
+
+    <script>
+        const btn = document.getElementById('btn');
+        const text = document.getElementById('text');
+
+        btn.onclick = function(){
+            alert('Your stings length is-  ' +text.value.length)
+        }
+    </script>
+</body>
+</html>
